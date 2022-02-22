@@ -14,7 +14,7 @@ class clientcontroller extends Controller
      */
     public function index()
     {
-        //
+        return view('practicle');
     }
 
     /**

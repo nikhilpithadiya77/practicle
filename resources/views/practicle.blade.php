@@ -12,7 +12,7 @@
 	<div class="container">
 	 <h1 class="text-center"><span>Vehicle Booking</span></h1>
     
-	 <form method="post" action="/practicle" enctype="multipart/form-data" class="form-horizontal">
+	 <form method="post" action="/test" enctype="multipart/form-data" class="form-horizontal">
 	 @csrf	
      <div class="col-sm-6 col-sm-offset-3">
 	 		<div class="form-group">
