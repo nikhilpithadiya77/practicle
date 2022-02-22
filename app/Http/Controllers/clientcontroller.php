@@ -24,11 +24,9 @@ class clientcontroller extends Controller
      */
     public function create()
     {
-        try {
+       
             return view('practicle');
-        } catch (Exception $error) {
-            return redirect()->back()->with('error', $error);
-        }
+        
     }
 
     /**
@@ -40,22 +38,22 @@ class clientcontroller extends Controller
     public function store(Request $request)
     {
         try {
-                $companies = new client();
-                $companies->vehicle = $request->vehicle;
-                $companies->date = $request->date;
-                $companies->booking = $request->booking;
-                $companies->name = $request->name;
-                $companies->email = $request->email;
-                $companies->phone = $request->phone;
-                $companies->dob = $request->dob;
-                $companies->address = $request->address;
-                $companies->zipcode = $request->zipcode;
-                $companies->city = $request->city;
-                $companies->state = $request->state;
-                $companies->save();
+                $practicle = new client();
+                $practicle->vehicle = $request->vehicle;
+                $practicle->date = $request->date;
+                $practicle->booking = $request->booking;
+                $practicle->name = $request->name;
+                $practicle->email = $request->email;
+                $practicle->phone = $request->phone;
+                $practicle->dob = $request->dob;
+                $practicle->address = $request->address;
+                $practicle->zipcode = $request->zipcode;
+                $practicle->city = $request->city;
+                $practicle->state = $request->state;
+                $practicle->save();
                 return redirect('practicle');
             
-            dd("img");
+         
         } catch (Exception $error) {
             return redirect()->back()->with('error', $error);
         }
