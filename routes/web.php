@@ -17,7 +17,7 @@ use App\Http\Controllers\clientcontroller;
 //     return view('welcome');
 // });
 // Route::view('practicle','practicle');
-Route::resources(['/practicle' => clientcontroller::class]);
+Route::resources(['/demo' => clientcontroller::class]);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
